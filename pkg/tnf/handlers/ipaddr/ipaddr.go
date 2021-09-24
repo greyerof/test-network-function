@@ -23,7 +23,6 @@ import (
 	"time"
 
 	"github.com/test-network-function/test-network-function/pkg/tnf"
-	"github.com/test-network-function/test-network-function/pkg/tnf/dependencies"
 	"github.com/test-network-function/test-network-function/pkg/tnf/identifier"
 	"github.com/test-network-function/test-network-function/pkg/tnf/reel"
 )
@@ -46,7 +45,7 @@ const (
 
 var (
 	// ipAddrCommand is the skeleton command used to get ip address information for a device.
-	ipAddrCommand = fmt.Sprintf("%s addr show dev", dependencies.IPBinaryName)
+	ipAddrCommand = fmt.Sprintf("%s addr show dev", "kk") // dependencies.IPBinaryName)
 )
 
 // Args returns the command line args for the test.
